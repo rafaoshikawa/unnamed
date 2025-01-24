@@ -1,0 +1,28 @@
+cores  darkmode
+
+bg
+ background-color: #242424;
+
+card
+#1D1D29
+
+card ativo
+#F1F8FF
+
+font
+#ffffffde
+
+azul
+#535bf2
+
+////light mode
+
+bg
+#FFFFFF
+
+font
+#070707
+
+
+
+

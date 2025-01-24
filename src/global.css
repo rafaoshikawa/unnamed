@@ -1,0 +1,41 @@
+:root {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+
+  color-scheme: light dark;
+  color: #ffffffde;
+  background-color: #1a1a1a;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+a {
+  color: #FFFFFF;
+  text-decoration: inherit;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 0.5fr 4fr;
+  gap: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+
+
