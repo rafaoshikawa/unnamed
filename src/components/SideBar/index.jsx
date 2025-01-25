@@ -1,15 +1,24 @@
 import { Container, ButtonSideBar } from "./style";
-import contactUs from "../../assets/images/contactus.svg";
+import contactUs from "../../Assets/images/contactus.svg";
 import analytics from "../../assets/images/analytics.svg";
 import products from "../../assets/images/products.svg";
 import costumers from "../../assets/images/costumers.svg";
 import news from "../../assets/images/news.svg";
 import settings from "../../assets/images/settings.svg";
 import logout from "../../assets/images/logout.svg";
+import brazil from "../../assets/images/brazil.svg";
+import portugal from "../../assets/images/portugal.svg";
+import usa from "../../assets/images/usa.svg";
 function SideBar() {
   return (
     <Container>
       <h1>SmartBlock</h1>
+      <div className="flags">
+        <img src={brazil} alt="" />
+        <img src={portugal} alt="" />
+        <img src={usa} alt="" />
+      </div>
+
       <ButtonSideBar href="">
         {" "}
         <img src={analytics} alt="" /> Analytics

@@ -14,6 +14,8 @@
 * {
   padding: 0;
   margin: 0;
+
+
 }
 a {
   color: #ffffff;
@@ -32,10 +34,13 @@ body {
   width: 100%;
   height: 100vh;
   position: relative;
+  margin-right: auto;
+  max-width: 1200px;
+  box-sizing: border-box;
 }
 
-.container::before {
-  content: "";
+/* .container::before {
+   content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -46,8 +51,8 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   opacity: 8%;
-  z-index: -1; /* garantir que a imagem fique atras de tudo*/
-}
+  z-index: -1;
+} */
 
 h2 {
   font-size: 2rem;

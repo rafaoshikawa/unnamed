@@ -5,10 +5,24 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: left;
   justify-content: left;
-  background-color: #1D1D29;
+  background-color: #1d1d29;
   gap: 16px;
   padding: 3rem 1rem;
 
+  .flags {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .flags img {
+    width: 24px; /* Define a largura fixa */
+    height: 24px; /* Define a altura fixa */
+    object-fit: cover; /* Garante que a imagem seja cortada proporcionalmente se necessário */
+    border-radius: 50%; /* Se quiser deixar as bandeiras redondas */
+  }
 
   h1 {
     font-size: 1.8rem;
