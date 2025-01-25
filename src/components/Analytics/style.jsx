@@ -1,106 +1,116 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  color: #1a1a1a;
-  background-color: #ffffff;
-  border-radius: 30px;
+  padding: 46px;
+
+  .license {
+    background-color: #1d1d29;
+    max-width: max-content;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+
+    span {
+      color: #0ecb81;
+    }
+  }
+  .progress {
+    height: 15px;
+    background-color: #777;
+    position: relative;
+    width: 400px; /* Define o comprimento da barra de progresso */
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+
+  .progress .progress-bar {
+    position: absolute;
+    height: 100%;
+    background-color: #0ecb81;
+    animation: progress-animation 6s forwards; /* Usa 'forwards' para manter o estado final */
+    border-radius: 10px;
+  }
+
+  @keyframes progress-animation {
+    0% {
+      width: 0%;
+    }
+    30% {
+      width: 30%;
+    }
+    100% {
+      width: 30%;
+    }
+  }
+`;
+
+
+export const LicenseCard = styled.div`
+  background-color: #1d1d29;
+  max-width: max-content;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+
+  .tittleLicense{
+    font-size: 1.5rem;
+  }
+
+  .licenseValue{
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+  .tittleProgress{
+    color: #9f9999;
+  }
+`;
+
+export const Card = styled.div`
+  display: grid;
+  background-color: #1d1d29;
+  width: 200px;
   height: auto;
-  margin-top: 1.5rem;
-  padding: 1rem 4rem;
-`;
-export const CardsContainer = styled.div`
-  display: flex;
-  gap: 20px;
-  flex: 1;
-  flex-wrap: wrap;
-`;
-export const Header = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  border-radius: 10px;
+  padding: 24px;
+  margin-top: 32px;
+  transition: 0.3s;
 
+  &:hover {
+    transform: scale(1.1);
+  }
 
-
-  .profile {
+  .tittle {
+    font-size: 1.3rem;
+  }
+  .value {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .percentage {
     display: flex;
     align-items: center;
-    justify-content: right;
-    gap: 10px;
-
-    p {
-      font-size: 1.3rem;
-      font-weight: bold;
-    }
-
-    img {
-      width: 10%;
-      height: auto;
-      object-fit: contain;
-      transition: 0.3s;
-    }
+    color: #0ecb81;
   }
 `;
 
-export const ProfitCard = styled.div`
-  background-color: #e4f0fc;
-  width: 300px;
-  height: auto;
-  border-radius: 20px;
-  padding: 2rem;
-  margin-top: 1rem;
 
-  p {
-    font-size: 1.5rem;
-  }
-`;
-export const Values = styled.span`
-  font-weight: bold;
-  font-size: 2.5rem;
-`;
-export const Tittle = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #484848;
-  img {
-    width: 42px;
-  }
-`;
-
-export const Percentage = styled.div`
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-  span {
-    color: #16c784;
-  }
-`;
-export const Funds = styled.div`
-  background-color: #D6EDD9;
-  width: 200px;
-  height: auto;
-  border-radius: 20px;
-  padding: 2rem;
-  margin-top: 1rem;
-
-  p {
-    font-size: 1.5rem;
-  }
-`;
-
-export const Group = styled.div`
-  background-color: #E5DEF0;
-  width: 200px;
-  height: auto;
-  border-radius: 20px;
-  padding: 2rem;
-  margin-top: 1rem;
-
-  p {
-    font-size: 1.5rem;
-  }
-`;
-export const HistoryContainer = styled.div`
+export const Dashboard = styled.div`
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
+
+  .btc{
+
+   max-width: max-content;
+   border: 8px solid #1d1d29;
+   border-radius: 10px;
+
+  }
+
+
+`;
+
+export const ContainerCards = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 `
+

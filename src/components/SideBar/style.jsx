@@ -5,19 +5,19 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: left;
   justify-content: left;
-  background-color: #1a1a1a;
-  gap: 2rem;
+  background-color: #1D1D29;
+  gap: 16px;
   padding: 3rem 1rem;
 
 
   h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   a {
     display: flex;
     gap: 20px;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .settings {
@@ -35,9 +35,9 @@ export const Container = styled.div`
   }
 
   .contactUs {
-    width: 100%; /* Garante que o SVG preencha a largura disponível */
-    height: auto; /* Mantém a proporção do SVG */
-    object-fit: contain; /* Faz o SVG se ajustar ao container */
+    width: 100%;
+    height: auto;
+    object-fit: contain;
     transition: 0.3s;
   }
 
@@ -47,10 +47,10 @@ export const Container = styled.div`
 `;
 export const ButtonSideBar = styled.a`
   padding: 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease; /* Adiciona transição suave */
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: #535bf2; /* Cor de fundo ao passar o mouse */
+    background-color: #535bf2;
   }
 `;

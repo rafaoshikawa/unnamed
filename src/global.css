@@ -1,41 +1,54 @@
 :root {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.5;
 
   color-scheme: light dark;
   color: #ffffffde;
-  background-color: #1a1a1a;
+  background-color: #12121e;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-*{
+* {
   padding: 0;
   margin: 0;
 }
 a {
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: inherit;
 }
-
 
 body {
   margin: 0;
   padding: 0;
-
 }
 
-.container{
+.container {
   display: grid;
   grid-template-columns: 0.5fr 4fr;
-  gap: 2rem;
+  grid-column: 2;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./Assets/images/circuit.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 8%;
+  z-index: -1; /* garantir que a imagem fique atras de tudo*/
 }
 
 h2 {
   font-size: 2rem;
 }
-
-
-
