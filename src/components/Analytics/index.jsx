@@ -1,5 +1,5 @@
-import arrowdown from "../../assets/images/arrowdown.svg";
-import graficobtc from "../../assets/images/graficobtc.png";
+import arrowdown from "@assets/images/arrowdown.svg";
+import graficobtc from "@assets/images/graficobtc.png";
 
 import {
   Container,
