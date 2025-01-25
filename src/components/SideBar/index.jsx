@@ -1,5 +1,4 @@
 import { Container, ButtonSideBar } from "./style";
-import contactUs from "../../Assets/images/contactus.svg";
 import analytics from "../../assets/images/analytics.svg";
 import products from "../../assets/images/products.svg";
 import costumers from "../../assets/images/costumers.svg";
@@ -46,9 +45,7 @@ function SideBar() {
           Sign out
         </ButtonSideBar>
       </div>
-      <a href="" className="contactUs">
-        <img src={contactUs} alt="" />
-      </a>
+     
     </Container>
   );
   ("");

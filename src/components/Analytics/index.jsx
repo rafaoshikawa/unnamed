@@ -1,5 +1,4 @@
 import arrowdown from "../../assets/images/arrowdown.svg";
-import cash from "../../assets/images/cash.svg";
 import graficobtc from "../../assets/images/graficobtc.png";
 
 import {
@@ -9,7 +8,6 @@ import {
   Dashboard,
   ContainerCards,
   ContainerHistory,
-  Transactions,
 } from "./style";
 
 function Analytics() {
@@ -83,7 +81,7 @@ function Analytics() {
           <p>Band Protocol / USDT</p>
           <p>13,54% </p>
           </div>
-          
+
 
         </div>
 
